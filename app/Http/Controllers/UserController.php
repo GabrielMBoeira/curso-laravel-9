@@ -17,7 +17,7 @@ class UserController extends Controller
 
             if($search) {
                 $query->where('email', $search);
-                $query->orWhere('name', 'LIKE', "{$search}");
+                $query->orWhere('name', 'LIKE', "%{$search}%");
             }
 
         })->get();
@@ -87,7 +87,6 @@ class UserController extends Controller
 
         $user->update($data);
 
-        //teste
         return redirect()->route('users.index');
     }
 
