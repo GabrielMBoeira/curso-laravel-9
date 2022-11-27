@@ -87,6 +87,7 @@ class UserController extends Controller
 
         $user->update($data);
 
+        //teste
         return redirect()->route('users.index');
     }
 
