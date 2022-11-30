@@ -24,8 +24,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-<<<<<<< HEAD
 require __DIR__.'/auth.php';
-=======
-//ROTAS
->>>>>>> correto
+
