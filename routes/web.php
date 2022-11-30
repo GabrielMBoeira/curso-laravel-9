@@ -20,9 +20,12 @@ Route::post('/users', [UserController::class, 'store'])->name('users.store');
 
 Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 
-
 Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 require __DIR__.'/auth.php';
+=======
+//ROTAS
+>>>>>>> correto
