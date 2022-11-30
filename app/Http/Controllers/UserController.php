@@ -19,6 +19,7 @@ class UserController extends Controller
 
     public function index(Request $request)
     {
+
         // $users = User::where('name', 'LIKE', "%{$request->search}%")->get();
 
         $users = $this->model->getUser(search: $request->search ?? '');
